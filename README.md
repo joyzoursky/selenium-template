@@ -8,7 +8,7 @@ A simple example of selenium test written in Python
 
  1. [Homebrew](http://brew.sh/)
 
- 2. Python 2.7
+ 2. Python
 
 	```
 	$ brew install python
