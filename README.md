@@ -20,11 +20,10 @@ A simple example of selenium test written in Python
 	$ brew install chromedriver
 	```
 
-
 ## Setup
 
 ```
-$ pip install -r requirements.txt
+$ pip install selenium==3.8.0
 ```
 
 ## Test run
