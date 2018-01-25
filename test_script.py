@@ -13,6 +13,7 @@ class TestTemplate(unittest.TestCase):
         """Start web driver"""
         chrome_options = webdriver.ChromeOptions()
         chrome_options.add_argument('--no-sandbox')
+        chrome_options.add_argument('--window-size=1920,1080')
         chrome_options.add_argument('--headless')
         chrome_options.add_argument('--disable-gpu')
         self.driver = webdriver.Chrome(chrome_options=chrome_options)
@@ -22,7 +23,7 @@ class TestTemplate(unittest.TestCase):
         """Stop web driver"""
         self.driver.quit()
 
-    def test_case1(self):
+    def test_case_1(self):
         """Find and click top-right button"""
         try:
             self.driver.get('https://www.oursky.com/')
@@ -31,7 +32,7 @@ class TestTemplate(unittest.TestCase):
         except NoSuchElementException as ex:
             self.fail(ex.msg)
 
-    def test_case2(self):
+    def test_case_2(self):
         """Find and click Learn more button"""
         try:
             self.driver.get('https://www.oursky.com/')

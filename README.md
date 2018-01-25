@@ -14,7 +14,7 @@ A simple example of selenium test written in Python
 	$ brew install python
 	```
 
- 3. Chrome driver
+ 3. Chromedriver
 
 	```
 	$ brew install chromedriver
