@@ -29,5 +29,17 @@ $ pip install selenium==3.8.0
 ## Test run
 
 ```
+$ git clone https://github.com/joyzoursky/selenium-template.git
+$ cd selenium-template
 $ python test_script.py
+```
+
+## Running in docker image
+
+```
+$ git clone https://github.com/joyzoursky/selenium-template.git
+$ cd selenium-template
+$ docker run -it -v $(pwd):/usr/workspace joyzoursky/python-chromedriver:3.6-alpine3.7-selenium sh
+/ # cd /usr/workspace
+/usr/workspace # python test_script.py
 ```
