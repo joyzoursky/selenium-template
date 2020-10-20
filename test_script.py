@@ -26,7 +26,7 @@ class TestTemplate(unittest.TestCase):
         """Find and click top-right button"""
         try:
             self.driver.get('https://www.oursky.com/')
-            el = self.driver.find_element_by_class_name('btn-header')
+            el = self.driver.find_element_by_class_name('header__cta')
             el.click()
         except NoSuchElementException as ex:
             self.fail(ex.msg)
@@ -35,7 +35,7 @@ class TestTemplate(unittest.TestCase):
         """Find and click Learn more button"""
         try:
             self.driver.get('https://www.oursky.com/')
-            el = self.driver.find_element_by_xpath(".//*[@id='tag-line-wrap']/span/a")
+            el = self.driver.find_element_by_xpath(".//*[@id='landing__btn']/span")
             el.click()
         except NoSuchElementException as ex:
             self.fail(ex.msg)
